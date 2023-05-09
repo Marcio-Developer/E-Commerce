@@ -20,6 +20,7 @@ body{
     width: 100%;
     background: #815cd8;
   }
+
   .heading ul {
     display: flex;
   }
@@ -172,6 +173,7 @@ body{
   
   .heading1 {
     opacity: 0;
+    margin-top: 8px;
   }
   .search {
     display: flex;
@@ -481,42 +483,7 @@ body{
       height: 150px;
     }
   }
-  @media screen and (max-width: 550px) {
-    .logo a{
-      font-size: 35px;
-    }
-    .heading ul li {
-      display: none;
-    }
-    .heading1 {
-      opacity: 1;
   
-      bottom: 8px;
-    }
-  
-    header {
-      height: 250px;
-      flex-wrap: wrap;
-      display: flex;
-      flex-direction: column;
-    }
-    #input {
-      width: 150px;
-    }
-    .close {
-      z-index: 34;
-    }
-  
-    .search a {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    .footer2 {
-      display: flex;
-      width: 50%;
-      text-align: center;
-    }
-  }
   
 /* Página de Login*/
   @import url('https://fonts.google.com/specimen/Nunito+Sans?query=Nunito+Sans');
@@ -534,15 +501,15 @@ body{
     top: 50%;
     left: 50%;
     width: 400px;
-    padding: 40px;
     transform: translate(-50%, -50%);
     background-color: #815cd8;
     box-shadow: 0 8px 20px rgba(53, 53, 61, 0.7);
     border-radius: 10px;
+    padding: 40px;
 }
 
 .login-box h2{
-    margin: 0 0 30px;
+    margin: 0 0 15px;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -566,11 +533,16 @@ body{
     position: relative;
     left: 0;
     top: -5px;
+    margin-bottom: 10px;
     padding: 10px 0;
     font-size: 16px;
     color: #fff;
     pointer-events: none;
     transition: 0.5s;
+}
+
+.login-box .user-box input{
+    margin-bottom: 20px;
 }
 
 .login-box .user-box input:focus{
@@ -620,9 +592,24 @@ body{
 }
 
 /* Página de Contato*/
+.login-box{
+  height: 495px;
+  margin-top: 70px;
+}
+
+.login-box h2{
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.user-box{
+  margin: -5px;
+}
+
 .login-box .user-box textarea {
   border: 0;
-  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding: 10px;
   outline: none;
   background: #fff;
@@ -631,6 +618,7 @@ body{
   border-radius: 10px;
   resize: none;
   width: 100%;
+  height: 130px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -641,7 +629,6 @@ body{
 h2{
   text-align: center;
   color: #125fd3;
-  margin-top: 30px;
 }
 
 h3{
@@ -663,7 +650,50 @@ p{
   margin: 20px 40px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 550px){
+  .logo a{
+    font-size: 35px;
+  }
+  .heading ul li {
+    display: none;
+  }
+  .heading1 {
+    opacity: 1;
+
+    bottom: 8px;
+  }
+
+  header {
+    height: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  #input {
+    width: 150px;
+  }
+  .close {
+    z-index: 34;
+  }
+
+  .search{
+    padding: 10px;
+  }
+
+  button{
+    margin-bottom: 10px;
+  }
+
+  .search a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer2 {
+    display: flex;
+    width: 50%;
+    text-align: center;
+  }  
+
     .login-box{
         width: 50%;
         display: flex;
@@ -672,6 +702,8 @@ p{
 
     .login-box h2{
         font-size: 18px;
+        margin-top: -20px;
+        margin-bottom: 10px;
     }
 
     .login-box label{
@@ -682,6 +714,7 @@ p{
 
     .login-box .user-box input{
         font-size: 12px;
+        margin-bottom: 20px;
     }
 
     .botton-form input{ 
@@ -700,7 +733,7 @@ p{
 
     .login-box{
       width: 250px;
-      height: 540px;
+      height: 450px;
   }
 
   .login-box .user-box textarea {

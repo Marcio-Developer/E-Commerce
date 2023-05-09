@@ -7,3 +7,7 @@ close.addEventListener("click", () => {
 open.addEventListener("click", () => {
   menu.style.visibility = "visible";
 });
+
+function login() {
+  window.location.href = "login.html";
+}
